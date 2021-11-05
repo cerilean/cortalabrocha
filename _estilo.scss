@@ -1,0 +1,221 @@
+
+h1 {
+ color: black; 
+  padding: 18px;
+      border: 4px;
+}
+
+p { 
+     color: white;
+ }
+
+li { 
+	color: black; 
+}
+h4 { 
+	color: darkred; 
+}
+p { 
+	color: darkblue; 
+}
+header {
+	background: linear-gradient(lightblue 70%, #F1C27D);
+    border-top-right-radius: 0;
+}
+main {
+	background: linear-gradient(#F1C27D 95%, lightblue);
+	font-family: arial;
+}
+footer {
+	background: radial-gradient(#F1C27D, lightblue);
+	padding: 15px;
+    border: 2px;
+}
+.cursiva{
+	font-style: italic;
+}
+.negrita{
+    font-weight: bold;
+}
+
+.centrar { 
+    text-align: center;
+}
+
+ul {
+
+	list-style-type: circle;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@100&display=swap'); 
+
+p { font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+
+.boxmode {
+      padding: 10px;
+      border: 1px ;
+}
+.menu li a{
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+
+}
+.menu li{
+	display: inline-block;
+}
+
+.flexbox { 
+      display: flex;
+      padding: 8px;
+      flex-flow: column wrap;
+      justify-content: center;
+      height: 500px;
+      align-items: center;
+ }
+
+ div { 
+      text-align: center;
+  }
+
+  .grid-container {
+
+       display: grid;
+       background-color: black;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: 40px auto auto;
+       justify-content: center;
+       
+  }
+  .grid-container div{
+           background-color: yellow;
+            border: 2px solid black;
+            text-align: center;
+
+  } 
+  .item1 {
+  	      grid-column: 1 / 4;
+  }
+
+
+.fondo {
+	   background: violet;
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	.fondo {
+		background-color: green;
+	}
+}
+
+@media (max-width: 599px) {
+        .fondo {
+        	background-color: yellow;
+        }
+
+}
+
+img {
+       animation-name: mianimacion;
+       animation-duration: 5s;
+       position: relative;
+       animation-iteration-count: 3;
+}
+
+@keyframes mianimacion {
+             0%  {left: 0 ;top: 0;}
+             25% {left:400px ;top: 0;}
+             50% {left: 0 ;top: 0;}
+             75% {left: -400px; top: 0;}
+             100% {left: 0; top: 0;}         
+}
+
+p {
+       transform: scale(2.0) translate(10px) rotateX(45deg);
+}
+
+ .site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.dropdown-menu {
+  position: static;
+  display: block;
+  width: auto;
+  margin: 4rem auto;
+}
+
+.dropdown-menu-macos {
+  display: grid;
+  gap: .25rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: .25rem;
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  text-align: left;
+  background-color: var(--bs-white);
+  border-radius: .25rem;
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: rgba(0, 0, 0, .05);
+}
+.cal-btn[disabled] {
+  opacity: .5;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}

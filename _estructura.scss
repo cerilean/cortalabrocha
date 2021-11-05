@@ -1,0 +1,67 @@
+/* Fondo */
+
+header {
+  background: linear-gradient(lightblue 70%, #F1C27D);
+    border-top-right-radius: 0;
+}
+main {
+  background: linear-gradient(#F1C27D 95%, lightblue);
+  font-family: arial;
+}
+footer {
+  background: radial-gradient(#F1C27D, lightblue);
+  padding: 15px;
+  border: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@100&display=swap'); 
+
+/* Estructura */ 
+h1 {
+  color: $colorUno;
+  padding: 18px;
+  border: 4px; 
+  ancho: $ancho;
+  font-family: $letra;
+  }
+
+p {
+  color: $colorCuatro;
+  padding: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: xxl-large;
+  background-color: $fondoNegro;
+  ancho: ($ancho/2)+80;
+}
+
+div { 
+  color: $colorDos;
+  font-size: small;
+}
+
+h4 {
+  color: $colorTres;
+  font-size: small;
+}
+
+video {
+   border-color: black;
+   border-radius: 100px;
+   border-spacing: 50px;
+}
+
+h3 {
+   color: $colorTres; 
+   border: black;
+}
+
+table {
+  border-color: black;
+   border-radius: 100px;
+   border-spacing: 50px;
+
+}
+label {
+  text-align: center;
+}
